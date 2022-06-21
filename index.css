@@ -34,6 +34,7 @@ The designs were created to the following widths:
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400, 500, 600, 700 */
 /* Web view with width -1440px */
+
 body {
   font-family: "Poppins";
   max-width: 1440px;
@@ -87,7 +88,7 @@ h1 {
 form[action="top"] {
   background-color: white;
   width: 22vw;
-  height: 40vh;
+  height: 45vh;
   border-radius: 5px;
   padding: 40px 50px;
   box-shadow: 0 6px 0 #e46c70;
@@ -137,7 +138,143 @@ input[type="submit"] {
 .terms i {
   color: hsl(0, 100%, 74%);
 }
+@media screen and (max-width: 420px) {
 
+  body {
+    font-size: 16px;
+    background-image: url(./bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    color: aliceblue;
+
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    width: 100%;
+  }
+
+  .write-up {
+    width: 90%;
+
+    margin-left: 5%;
+    height: 35vw;
+    margin-bottom: 4vh;
+
+
+  }
+
+  h1 {
+    margin-top: 8vh;
+    font-weight: 700;
+    font-size: 23px;
+    width: 50%;
+    text-align: center;
+    padding-left: 20%;
+  }
+
+  h1+p {
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+    line-break: auto;
+    padding-left: 10%;
+  }
+
+  .form {
+    border-radius: 15px;
+    width: 90%;
+    height: 55vh;
+    margin-left: 6.5%;
+  }
+
+  .free {
+    height: 60px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    width: 60%;
+    padding: 11px 60px;
+    box-shadow: 0 6px 0 #e46c70;
+
+  }
+
+  .free p {
+    padding: 0px 5px;
+    text-align: center;
+  }
+
+  form[action="top"] {
+    background-color: white;
+    width: 90%;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 6px 0 #e46c70;
+
+  }
+
+
+  b {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .first {
+    margin-top: 10px;
+  }
+
+  input[type="text"] {
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid rgb(224, 210, 210);
+  }
+
+  ::placeholder {
+    font-weight: 600;
+    color: hsl(246, 25%, 77%);
+  }
+
+  input[type="text"]:hover {
+    border: 1px solid rgb(248, 243, 243);
+  }
+
+  input[type="submit"] {
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    width: 90%;
+    border: 1px solid rgb(224, 210, 210);
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid hsl(246, 25%, 77%);
+  }
+
+  .terms {
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 2px;
+  }
+
+  .terms i {
+    color: hsl(0, 100%, 74%);
+    word-break: 20px;
+
+  }
+}
 /* Mobile view width - 375px */
 @media screen and (max-width: 375px) {
    
@@ -153,7 +290,7 @@ input[type="submit"] {
   .container {
     display: flex;
     flex-direction: column;
-    margin-top: 6px;
+    margin-top: 4px;
     width: 100%;
   }
   .write-up {
@@ -161,13 +298,13 @@ input[type="submit"] {
 
  margin-left: 5%;
  height: 50vw;
- margin-bottom: 5vh;
+ margin-bottom: 3vh;
 
    
   }
   
   h1 {
-    margin-top: 10vh;
+    margin-top: 8.5vh;
     font-weight: 700;
     font-size: 23px;
     width: 50%;
@@ -184,7 +321,7 @@ input[type="submit"] {
   .form {
     border-radius: 15px;
    width: 90%;
-   height: 50vh;
+   height: 60vh;
    margin-left: 6.5%;
   }
   .free {
@@ -194,6 +331,7 @@ input[type="submit"] {
     width: 60%;
     padding: 11px 60px;
     box-shadow: 0 6px 0 #e46c70;
+    border-bottom: 5px;
     
   }
   .free p {
@@ -203,9 +341,9 @@ input[type="submit"] {
   form[action="top"] {
     background-color: white;
     width: 90%;
-    height: 40vh;
+    height: 45vh;
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 15px 10px;
     box-shadow: 0 6px 0 #e46c70;
     
   }
@@ -254,9 +392,11 @@ input[type="submit"] {
     color: hsl(246, 25%, 77%);
     width: 70%;
     margin-left: 15%;
+    margin-bottom: 2px;
   }
   .terms i {
     color: hsl(0, 100%, 74%);
     word-break: 20px;
+   
   }
 }
