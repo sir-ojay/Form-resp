@@ -138,6 +138,7 @@ input[type="submit"] {
 .terms i {
   color: hsl(0, 100%, 74%);
 }
+/* Mobile view width - 420px */
 @media screen and (max-width: 420px) {
 
   body {
@@ -195,7 +196,7 @@ input[type="submit"] {
     height: 60px;
     background-color: hsl(248, 32%, 49%);
     border-radius: 10px;
-    width: 60%;
+    width: 63.5%;
     padding: 11px 60px;
     box-shadow: 0 6px 0 #e46c70;
 
@@ -264,7 +265,7 @@ input[type="submit"] {
   .terms {
     font-size: 10px;
     color: hsl(246, 25%, 77%);
-    width: 70%;
+    width: 60%;
     margin-left: 15%;
     margin-bottom: 2px;
   }
